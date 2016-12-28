@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="trainee"
+		class="com.atuldwivedi.springseason.autowiring.constructor.Trainee"
+		autowire="constructor" />
+
+	<!-- autowire="constructor" Otherwise -->
+	<!-- <bean id="trainee"
+		class="com.atuldwivedi.springseason.autowiring.constructor.Trainee">
+		<constructor-arg>
+			<ref bean="course" />
+		</constructor-arg>
+	</bean> -->
+
+	<bean id="course"
+		class="com.atuldwivedi.springseason.autowiring.constructor.Course">
+		<property name="courseName" value="Java" />
+	</bean>
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- autowire="autodetect" -->
+	<bean id="team"
+		class="com.atuldwivedi.springseason.autowiring.autodetect.Team"
+		 />
+
+	<bean id="captain"
+		class="com.atuldwivedi.springseason.autowiring.autodetect.Captain">
+		<property name="catainName" value="Atul Dwivedi" />
+	</bean>
+
+</beans>

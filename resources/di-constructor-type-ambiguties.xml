@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Problem 1 - Type ambiguity -->
+	<bean id="courierProblem1"
+		class="com.atuldwivedi.springseason.di.via.constructor.typeambiguties.Courier">
+		<constructor-arg value="123456789" />
+		<constructor-arg value="Bengaluru" />
+	</bean>
+
+	<!-- Solution 1 - argument type -->
+	<bean id="courierSolution1"
+		class="com.atuldwivedi.springseason.di.via.constructor.typeambiguties.Courier">
+		<constructor-arg type="long" value="123456789" />
+		<constructor-arg type="java.lang.String" value="Bengaluru" />
+	</bean>
+
+<!-- Problem 2 - argument sequence -->
+	<bean id="courierProblem2"
+		class="com.atuldwivedi.springseason.di.via.constructor.typeambiguties.Courier">
+		<constructor-arg type="java.lang.String" value="Delhi" />
+		<constructor-arg type="float" value="110.75" />
+	</bean>
+	
+	<!-- Solution 2 - argument sequence -->
+	<bean id="courierSolution2"
+		class="com.atuldwivedi.springseason.di.via.constructor.typeambiguties.Courier">
+		<constructor-arg type="java.lang.String" value="Delhi" index="0" />
+		<constructor-arg type="float" value="110.75" index="1" />
+	</bean>
+</beans>

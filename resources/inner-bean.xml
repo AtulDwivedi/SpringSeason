@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="superHeroThruSetter"
+		class="com.atuldwivedi.springseason.core.beans.innerbean.SuperHero">
+		<property name="person">
+			<bean class="com.atuldwivedi.springseason.core.beans.innerbean.Person">
+				<property name="name" value="Atul" />
+				<property name="age" value="21" />
+				<property name="address" value="Bangalore" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="superHeroThruConstructor"
+		class="com.atuldwivedi.springseason.core.beans.innerbean.SuperHero">
+		<constructor-arg>
+			<bean class="com.atuldwivedi.springseason.core.beans.innerbean.Person">
+				<property name="name" value="Iron Man" />
+				<property name="age" value="21" />
+				<property name="address" value="England" />
+			</bean>
+		</constructor-arg>
+	</bean>
+</beans>
