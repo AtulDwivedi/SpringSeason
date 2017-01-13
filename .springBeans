@@ -12,6 +12,7 @@
 		<config>resources/di-constructor-type-ambiguties.xml</config>
 		<config>resources/di-via-constructor.xml</config>
 		<config>resources/auto-wiring-by-type.xml</config>
+		<config>resources/bean-pre-post-action.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
