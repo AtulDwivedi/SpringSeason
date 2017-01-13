@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="cfb"
+		class="com.atuldwivedi.springseason.core.beans.collections.factorybean.Customer">
+		<property name="list">
+			<bean class="org.springframework.beans.factory.config.ListFactoryBean">
+				<property name="targetListClass" value="java.util.ArrayList" />
+				<property name="sourceList">
+					<list>
+						<value>1</value>
+						<value>2</value>
+						<value>3</value>
+					</list>
+				</property>
+			</bean>
+		</property>
+
+		<property name="set">
+			<bean class="org.springframework.beans.factory.config.SetFactoryBean">
+
+				<property name="targetSetClass" value="java.util.HashSet" />
+				<property name="sourceSet">
+					<set>
+						<value>1</value>
+						<value>2</value>
+						<value>3</value>
+					</set>
+				</property>
+			</bean>
+		</property>
+
+		<property name="map">
+			<bean class="org.springframework.beans.factory.config.MapFactoryBean">
+
+				<property name="targetMapClass" value="java.util.HashMap" />
+				<property name="sourceMap">
+					<map>
+						<entry key="Key1" value="1" />
+						<entry key="Key2" value="2" />
+						<entry key="Key3" value="3" />
+					</map>
+				</property>
+			</bean>
+		</property>
+	</bean>
+</beans>
