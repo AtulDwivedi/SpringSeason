@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="companyHQ" class="com.atuldwivedi.springseason.core.beans.bci.Company"
+		abstract="true">
+		<property name="compName" value="AtulDwivedi" />
+		<property name="compHQ" value="Bengaluru" />
+	</bean>
+
+	<bean id="newComp" parent="companyHQ">
+		<property name="industry" value="Software Engineering" />
+		<property name="type" value="public" />
+		<property name="location" value="New Delhi" />
+	</bean>
+
+	<bean id="newCompOverrideParentProp" parent="companyHQ">
+		<property name="compName" value="AtulDwivedi, Inc." />
+		<property name="industry" value="Software Engineering" />
+		<property name="type" value="public" />
+		<property name="location" value="New York" />
+	</bean>
+</beans>
+ 

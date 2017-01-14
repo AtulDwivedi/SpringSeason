@@ -13,6 +13,9 @@
 		<config>resources/di-via-constructor.xml</config>
 		<config>resources/auto-wiring-by-type.xml</config>
 		<config>resources/bean-pre-post-action.xml</config>
+		<config>resources/di-check-none-default.xml</config>
+		<config>resources/ppc-non-config.xml</config>
+		<config>resources/bci-bean-configuration-inheritance.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
