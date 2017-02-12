@@ -16,6 +16,9 @@
 		<config>resources/di-check-none-default.xml</config>
 		<config>resources/ppc-non-config.xml</config>
 		<config>resources/bci-bean-configuration-inheritance.xml</config>
+		<config>resources/da/jdbc/hw/datasource.xml</config>
+		<config>resources/da/jdbc/hw/customer.xml</config>
+		<config>resources/da/jdbc/hw/hw-module.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
