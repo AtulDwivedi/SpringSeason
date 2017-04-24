@@ -3,14 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="springHelper"
-		class="com.atuldwivedi.springseason.loosecoupling.helper.OfferHelperWithSpring">
+		class="com.atuldwivedi.springseason.loosecoupling.app.helper.OfferHelperWithSpring">
 		<property name="offer">
 			<ref bean="winterOffer" />
 		</property>
 	</bean>
 
 	<bean id="summerOffer"
-		class="com.atuldwivedi.springseason.loosecoupling.offer.SummerOffer" />
+		class="com.atuldwivedi.springseason.loosecoupling.app.offer.SummerOffer" />
 	<bean id="winterOffer"
-		class="com.atuldwivedi.springseason.loosecoupling.offer.WinterOffer" />
+		class="com.atuldwivedi.springseason.loosecoupling.app.offer.WinterOffer" />
 </beans>
