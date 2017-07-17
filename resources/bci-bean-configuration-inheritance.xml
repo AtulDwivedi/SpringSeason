@@ -16,8 +16,8 @@
 
 	<bean id="newCompOverrideParentProp" parent="companyHQ">
 		<property name="compName" value="AtulDwivedi, Inc." />
-		<property name="industry" value="Software Engineering" />
-		<property name="type" value="public" />
+		<property name="industry" value="Software Development" />
+		<property name="type" value="private" />
 		<property name="location" value="New York" />
 	</bean>
 </beans>
