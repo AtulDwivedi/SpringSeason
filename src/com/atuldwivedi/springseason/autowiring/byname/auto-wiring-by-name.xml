@@ -5,8 +5,7 @@
 
 	<bean id="laptop" class="com.atuldwivedi.springseason.autowiring.byname.Laptop"
 		autowire="byName" />
-	<bean id="os"<!-- id="os1" -->
-		class="com.atuldwivedi.springseason.autowiring.byname.OperatingSystem">
+	<bean id="os" class="com.atuldwivedi.springseason.autowiring.byname.OperatingSystem">
 		<property name="osName" value="Windows" />
 	</bean>
 </beans>

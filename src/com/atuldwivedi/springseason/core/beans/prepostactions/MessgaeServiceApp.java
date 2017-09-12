@@ -11,16 +11,16 @@ public class MessgaeServiceApp {
 		MessageService msgService = null;
 		if (randNum < 4) {
 			context = new ClassPathXmlApplicationContext(
-					"bean-pre-post-action.xml");
+					"com/atuldwivedi/springseason/core/beans/prepostactions/bean-pre-post-action.xml");
 			msgService = (MessageServiceUsingInterface) context
 					.getBean("msgService");
 		} else if (randNum <= 4 && randNum < 8) {
 			context = new ClassPathXmlApplicationContext(
-					"bean-pre-post-action-thru-xml.xml");
+					"com/atuldwivedi/springseason/core/beans/prepostactions/bean-pre-post-action-thru-xml.xml");
 			msgService = (MessageServiceUsingXML) context.getBean("msgService");
 		} else {
 			context = new ClassPathXmlApplicationContext(
-					"bean-pre-post-action-thru-annotation.xml");
+					"com/atuldwivedi/springseason/core/beans/prepostactions/bean-pre-post-action-thru-annotation.xml");
 			msgService = (MessageServiceUsingAnnotation) context
 					.getBean("msgService");
 		}

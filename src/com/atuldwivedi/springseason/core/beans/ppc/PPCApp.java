@@ -8,10 +8,11 @@ public class PPCApp {
 		ApplicationContext context = null;
 		int randomNum = (int) (Math.random() * 10);
 		if (randomNum < 6) {
-			context = new ClassPathXmlApplicationContext("ppc-non-config.xml");
-			System.out.println("Random Number is: "+randomNum+" DB properties from: ppc-non-config.xml");
+			context = new ClassPathXmlApplicationContext(
+					"com/atuldwivedi/springseason/core/beans/ppc/ppc-non-config.xml");
+			System.out.println("Random Number is: " + randomNum + " DB properties from: ppc-non-config.xml");
 		} else {
-			context = new ClassPathXmlApplicationContext("ppc-config.xml");
+			context = new ClassPathXmlApplicationContext("com/atuldwivedi/springseason/core/beans/ppc/ppc-config.xml");
 			System.out.println("DB properties from: ppc-config.xml");
 		}
 		DataSource ds = (DataSource) context.getBean("ds");

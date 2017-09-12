@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanScopesApp {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"bean-scopes.xml");
+				"com/atuldwivedi/springseason/core/beans/beanscopes/bean-scopes.xml");
 		
 		CustomerService csA1 = (CustomerService) context
 				.getBean("csDefaultSingleton");
