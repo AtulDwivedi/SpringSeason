@@ -6,11 +6,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<bean id="customer" class="com.atuldwivedi.springseason.di.check.Customer" dependency-check="all">
-		<!-- <property name="person" ref="person" />
-		<property name="type" value="1" /> -->
+	<!-- <bean id="customer" class="com.atuldwivedi.springseason.di.check.Customer" dependency-check="all">
+		<property name="person" ref="person" />
+		<property name="type" value="1" />
 		<property name="action" value="Buy" />
-	</bean>
+	</bean> -->
 
 	<bean id="person" class="com.atuldwivedi.springseason.di.check.Person">
 		<property name="name" value="Atul Dwivedi" />

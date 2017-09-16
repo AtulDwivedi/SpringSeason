@@ -3,11 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="customer" class="com.atuldwivedi.springseason.di.check.Customer" dependency-check="simple">
+	<!-- <bean id="customer" class="com.atuldwivedi.springseason.di.check.Customer" dependency-check="simple">
 		<property name="person" ref="person" />
-		<!-- <property name="type" value="1" /> -->
+		<property name="type" value="1" />
 		<property name="action" value="Nothing" />
-	</bean>
+	</bean> -->
 
 	<bean id="person" class="com.atuldwivedi.springseason.di.check.Person">
 		<property name="name" value="Atul Dwivedi" />
