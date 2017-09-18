@@ -10,7 +10,7 @@
                            http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 	<!-- Support for component scanning -->
-	<context:component-scan base-package="com.atuldwivedi.springseason" />
+	<context:component-scan base-package="com.atuldwivedi.springseason.mvc" />
 
 	<!-- Support for Conversion, Formatting and Validation Support -->
 	<mvc:annotation-driven />
@@ -18,8 +18,8 @@
 	<!-- Spring MVC View Resolver -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/view" />
-		<property name="sufix" value=".jsp" />
+		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="suffix" value=".jsp" />
 	</bean>
 
 </beans>

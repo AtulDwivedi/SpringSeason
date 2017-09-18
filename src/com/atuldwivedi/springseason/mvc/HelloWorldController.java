@@ -1,4 +1,4 @@
-package com.atuldwivedi.springseason;
+package com.atuldwivedi.springseason.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
