@@ -10,4 +10,14 @@ public class HelloWorldController {
 	public String showHelloWorldPage() {
 		return "hello-world";
 	}
+	
+	@RequestMapping("/showHelloWorldForm")
+	public String showHelloWorldForm() {
+		return "hello-world-form";
+	}
+	
+	@RequestMapping("/processHelloWorldForm")
+	public String processHelloWorldForm(){
+		return "process-hello-world-form";
+	}
 }
