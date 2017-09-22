@@ -10,53 +10,49 @@
 <body>
 
 	<form:form action="processForm" modelAttribute="student">
-		<label>First Name:&nbsp;</label>
+		<label><b>First Name:</b>&nbsp;</label>
 		<form:input path="fullName" />
-		<br>
+		<br><br>
 
-		<label>Last Name:&nbsp;</label>
+		<label><b>Last Name:</b>&nbsp;</label>
 		<form:input path="email" />
-		<br>
+		<br><br>
 
-		<label>Password:&nbsp;</label>
+		<label><b>Password:</b>&nbsp;</label>
 		<input type="password" name="password" />
-		<br>
+		<br><br>
 
-		<label>Gender:</label>
-		<br>
+		<label><b>Gender:</b></label>&nbsp;
 		<label>Male:&nbsp;</label>
 		<form:radiobutton path="gender" value="Male" />
 		<label>Female:&nbsp;</label>
 		<form:radiobutton path="gender" value="Female" />
-		<br>
+		<br><br>
 
-		<label>Country:&nbsp;</label>
+		<label><b>Country:</b>&nbsp;</label>
 		<form:select path="country">
 			<form:option value="IND" label="India" />
-			<form:option value="USA" label="United States of America" />
-			<form:option value="UK" label="United Kingdom" />
+			<form:option value="USA" label="America" />
+			<form:option value="UK" label="Australia" />
 		</form:select>
-		<br>
+		<br><br>
 
-
-
-		<label>Courses:</label>
-		<br>
+		<label><b>Courses:</b></label>
 		<label>Java Module 1:&nbsp;</label>
 		<form:checkbox path="courses" value="Core Java" />
 		<label>Java Module 2:&nbsp;</label>
 		<form:checkbox path="courses" value="Advance Java" />
 		<label>Java Module 3:&nbsp;</label>
 		<form:checkbox path="courses" value="Java Frameworks" />
-		<br>
+		<br><br>
 
-		<label>Are you a graduate?</label>
+		<label><b>Are you a graduate?</b></label>
 		<form:checkbox path="graduate" />
-		<br>
+		<br><br>
 
-		<label>Comment</label>
-		<form:textarea path="comment" cols="30" rows="5" />
-		<br>
+		<label><b>Comment</b></label>
+		<form:textarea path="comment" cols="20" rows="2" />
+		<br><br>
 
 
 		<input type="submit" value="Register" />
