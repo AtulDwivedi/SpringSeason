@@ -1,39 +1,74 @@
 package com.atuldwivedi.springseason.mvc;
 
+import java.util.Arrays;
+
 public class Student {
 
-	private String firstName;
-	private String lastName;
+	private String fullName;
+	private String email;
 	private String country;
-	private String lang;
+	private String gender;
+	private String[] courses;
+	private boolean graduate;
+	private String comment;
+
 	public Student() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	public String getFirstName() {
-		return firstName;
+
+	public String getFullName() {
+		return fullName;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+
 	public String getCountry() {
 		return country;
 	}
+
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public String getLang() {
-		return lang;
+
+	public String[] getCourses() {
+		return courses;
 	}
-	public void setLang(String lang) {
-		this.lang = lang;
+
+	public void setCourses(String[] courses) {
+		this.courses = courses;
 	}
-	
-	
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public boolean isGraduate() {
+		return graduate;
+	}
+
+	public void setGraduate(boolean graduate) {
+		this.graduate = graduate;
+	}
 }

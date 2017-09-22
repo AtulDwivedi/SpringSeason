@@ -18,7 +18,7 @@ public class TestController {
 	
 	@RequestMapping("/processTestForm")
 	public String processTestForm(@ModelAttribute("std") Student std){
-		System.out.println(std.getFirstName());
+		System.out.println(std.getFullName());
 		return "process-test-form";
 	}
 

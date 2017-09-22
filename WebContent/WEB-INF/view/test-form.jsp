@@ -1,6 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <form:form action="processTestForm" modelAttribute="std" >
-<form:input path="firstName"/>
+<form:input path="fullName"/>
 <form:select path="country">
 <form:option value="IND" label="India" />
 </form:select>
