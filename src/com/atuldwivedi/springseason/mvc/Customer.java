@@ -30,7 +30,7 @@ public class Customer {
 	@Pattern(regexp="^[a-zA-Z0-9]{6}", message="only 6 chars/digits")
 	private String customerCode;
 	
-	@BatchCode(value="JM2", message="prefix should be JM1")
+	@BatchCode(value="JM3", message="prefix should be JM3")
 	private String batchCode;
 
 	public String getFirstName() {
