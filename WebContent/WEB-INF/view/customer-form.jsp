@@ -64,17 +64,24 @@
 				
 				</td>
 			</tr>
-			
+
+			<tr>
+				<td><b>Batch Code:</b></td>
+				<td><form:input path="batchCode" /> 
+				<form:errors path="batchCode" cssClass="error" /></td>
+			</tr>
+
 			<tr>
 				<td>
 				
-				<b>Batch Code:</b>
+				<b>Date Of Birth Date:</b>
 				
 				</td>
 				<td>
 				
-				<form:input path="batchCode" />
-			<form:errors path="batchCode" cssClass="error" />
+				<form:input type="date" path="dob" placeholder="yyyy-MM-dd" />
+			<form:errors path="dob" cssClass="error" />
+				
 				
 				</td>
 			</tr>
@@ -82,11 +89,13 @@
 			<tr>
 				<td>
 				
-				
+				<b>Membership Expiery Date:</b>
 				
 				</td>
 				<td>
 				
+				<form:input type="date" path="expiry" placeholder="yyyy-MM-dd" />
+			<form:errors path="expiry" cssClass="error" />
 				
 				
 				</td>

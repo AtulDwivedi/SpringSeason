@@ -1,10 +1,16 @@
 package com.atuldwivedi.springseason.mvc;
 
+import java.util.Date;
+
+import javax.validation.constraints.Future;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import com.atuldwivedi.springseason.mvc.valid.BatchCode;
 
@@ -32,6 +38,14 @@ public class Customer {
 	
 	@BatchCode(value="JM3", message="prefix should be JM3")
 	private String batchCode;
+	
+	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+	@Past
+	private Date dob;
+	
+	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+	@Future
+	private Date expiry;
 
 	public String getFirstName() {
 		return firstName;
@@ -71,6 +85,22 @@ public class Customer {
 
 	public void setBatchCode(String batchCode) {
 		this.batchCode = batchCode;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	public Date getExpiry() {
+		return expiry;
+	}
+
+	public void setExpiry(Date expiry) {
+		this.expiry = expiry;
 	}
 
 }

@@ -22,4 +22,14 @@
 		<td><b>Batch Code</b></td>
 		<td>${customer.batchCode}</td>
 	</tr>
+	
+	<tr>
+		<td><b>Date of Birth</b></td>
+		<td>${customer.dob}</td>
+	</tr>
+	
+	<tr>
+		<td><b>Expiry</b></td>
+		<td>${customer.expiry}</td>
+	</tr>
 </table>

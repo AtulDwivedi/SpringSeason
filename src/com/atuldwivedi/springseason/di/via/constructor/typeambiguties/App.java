@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"di-constructor-type-ambiguties.xml");
+				"com/atuldwivedi/springseason/di/via/constructor/typeambiguties/di-constructor-type-ambiguties.xml");
 		Courier courier = (Courier) context.getBean("courierSolution2");
 		courier.displayData();
 	}

@@ -11,9 +11,9 @@
 				<value>1</value>
 				<ref bean="PersonBean" />
 				<bean class="com.atuldwivedi.springseason.core.beans.collections.Person">
-					<property name="name" value="mkyongList" />
+					<property name="name" value="AtulList" />
 					<property name="address" value="address" />
-					<property name="age" value="28" />
+					<property name="age" value="25" />
 				</bean>
 			</list>
 		</property>
@@ -24,9 +24,9 @@
 				<value>1</value>
 				<ref bean="PersonBean" />
 				<bean class="com.atuldwivedi.springseason.core.beans.collections.Person">
-					<property name="name" value="mkyongSet" />
+					<property name="name" value="AtulSet" />
 					<property name="address" value="address" />
-					<property name="age" value="28" />
+					<property name="age" value="25" />
 				</bean>
 			</set>
 		</property>
@@ -38,9 +38,9 @@
 				<entry key="Key 2" value-ref="PersonBean" />
 				<entry key="Key 3">
 					<bean class="com.atuldwivedi.springseason.core.beans.collections.Person">
-						<property name="name" value="mkyongMap" />
+						<property name="name" value="AtulMap" />
 						<property name="address" value="address" />
-						<property name="age" value="28" />
+						<property name="age" value="25" />
 					</bean>
 				</entry>
 			</map>
@@ -57,9 +57,9 @@
 	</bean>
 
 	<bean id="PersonBean" class="com.atuldwivedi.springseason.core.beans.collections.Person">
-		<property name="name" value="mkyong1" />
+		<property name="name" value="Atul" />
 		<property name="address" value="address 1" />
-		<property name="age" value="28" />
+		<property name="age" value="25" />
 	</bean>
 
 </beans>

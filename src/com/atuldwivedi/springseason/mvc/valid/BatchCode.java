@@ -9,8 +9,6 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import org.springframework.validation.annotation.Validated;
-
 @Constraint(validatedBy = BatchCodeConstraintValidator.class)
 @Retention(RUNTIME)
 @Target(FIELD)
@@ -19,9 +17,9 @@ public @interface BatchCode {
 	public String value() default "JM3";
 
 	public String message() default "prefix should be JM3";
-	
+
 	public Class<?>[] groups() default {};
-	
+
 	public Class<? extends Payload>[] payload() default {};
 
 }
