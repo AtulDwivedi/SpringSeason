@@ -24,5 +24,12 @@
 	<ul>
 		<li><a href="customer/showForm">Register</a></li>
 	</ul>
+	
+	
+	<hr>
+	<h1>Spring REST</h1>
+	<ul>
+		<li><a href="hello/sayIt">Say Hello</a></li>
+	</ul>
 </body>
 </html>
