@@ -1,4 +1,4 @@
-package com.atuldwivedi.springseason.rest;
+package com.atuldwivedi.springseason.cfg.annotation.rest;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import com.sun.media.jfxmedia.Media;
 
 @RestController
 @RequestMapping("/hello")
-public class RestHelloworld {
+public class SpringRestHelloworld {
 
 	@RequestMapping(value = { "/sayIt" }, produces={MediaType.APPLICATION_JSON_VALUE}, method = {
 			RequestMethod.GET }/* , headers="Accept=application/json" */)
