@@ -31,5 +31,11 @@
 	<ul>
 		<li><a href="hello/sayIt">Say Hello</a></li>
 	</ul>
+	
+	<hr>
+	<h1>Spring Hibernate Integration</h1>
+	<ul>
+		<li><a href="customer/list">List Customers</a></li>
+	</ul>
 </body>
 </html>
