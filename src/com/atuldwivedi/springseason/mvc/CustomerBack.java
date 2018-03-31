@@ -14,7 +14,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import com.atuldwivedi.springseason.mvc.valid.BatchCode;
 
-public class Customer {
+public class CustomerBack {
 
 	@NotNull(message="is required")
 	@Size(min=2, message="minimum lenght is 2")

@@ -1,4 +1,4 @@
-package com.atuldwivedi.springseason.mvc;
+package com.atuldwivedi.springseason.controller;
 
 import java.util.List;
 
@@ -56,23 +56,26 @@ public class CustomerController {
 	}
 
 	// --------------------
-	@GetMapping("add")
-	public String addCustomer(Model model) {
-		Customer customer = new Customer();
-		model.addAttribute("customer", customer);
-		return "add-customer";
-	}
-
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String listCustomers(Model model) {
 		List<Customer> customers = customerDao.listCustomers();
 		model.addAttribute("custs", customers);
-		return "list-customers";
+		return "customers-list";
+	}
+	
+	@GetMapping("/")
+	public String getCustomer(Model model) {
+		Customer customer = new Customer();
+		model.addAttribute("customer", customer);
+		return "customer-save";
 	}
 
-	@PostMapping("/add-customer")
+	@PostMapping("/save")
 	@Transactional
-	public String addCustomer(@ModelAttribute("customer") Customer customer, Model model) {
+	public String saveCustomer(@Valid @ModelAttribute("customer") Customer customer, Model model, BindingResult bindingResult) {
+		if (bindingResult.hasErrors()) {
+			return "customer-form";
+		} 
 		Customer cust = customerService.addCutomer(customer);
 		model.addAttribute("cust", cust);
 		return "customer";

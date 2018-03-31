@@ -14,9 +14,9 @@ import javax.validation.Payload;
 @Target(FIELD)
 public @interface BatchCode {
 
-	public String value() default "JM3";
+	public String value() default "Male";
 
-	public String message() default "prefix should be JM3";
+	public String message() default "suffix should be Male";
 
 	public Class<?>[] groups() default {};
 

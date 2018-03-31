@@ -19,7 +19,7 @@ implements ConstraintValidator<BatchCode, String> {
 		boolean result = false;
 
 		if (value != null) {
-			result = value.startsWith(batchCodePrefix);
+			result = value.endsWith(batchCodePrefix);
 		} else {
 			result = true;
 		}

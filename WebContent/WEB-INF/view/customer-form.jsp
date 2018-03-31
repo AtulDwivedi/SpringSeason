@@ -14,7 +14,14 @@
 </head>
 <body>
 	<table align="center">
-		<form:form action="processForm" modelAttribute="customer">
+		<form:form action="save" modelAttribute="customer">
+<tr>
+				<td><b>Email*:</b></td>
+				<td><form:input path="email" /> 
+					<form:errors path="email" cssClass="error" />
+				</td>
+			</tr>
+
 
 			<tr>
 				<td><b>First Name*:</b></td>
@@ -54,21 +61,21 @@
 			<tr>
 				<td>
 				
-				<b>Choose Customer Code:</b>
+				<b>Gender:</b>
 				
 				</td>
 				<td>
 				
-				<form:input path="customerCode" />
-			<form:errors path="customerCode" cssClass="error" />
+				<form:input path="gender" />
+			<form:errors path="gender" cssClass="error" />
 				
 				</td>
 			</tr>
 
 			<tr>
-				<td><b>Batch Code:</b></td>
-				<td><form:input path="batchCode" /> 
-				<form:errors path="batchCode" cssClass="error" /></td>
+				<td><b>PAN Card Number:</b></td>
+				<td><form:input path="panCardNumber" /> 
+				<form:errors path="panCardNumber" cssClass="error" /></td>
 			</tr>
 
 			<tr>
@@ -94,8 +101,8 @@
 				</td>
 				<td>
 				
-				<form:input type="date" path="expiry" placeholder="yyyy-MM-dd" />
-			<form:errors path="expiry" cssClass="error" />
+				<form:input type="date" path="membershipExpiryDate" placeholder="yyyy-MM-dd" />
+			<form:errors path="membershipExpiryDate" cssClass="error" />
 				
 				
 				</td>
